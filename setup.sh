@@ -4,8 +4,13 @@ wget https://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccess
 rm -rf Cuberite
 mkdir Cuberite
 tar -x -C Cuberite -f Cuberite.tar.gz
-
 rm Cuberite.tar.gz
+
+mkdir -p data
+mkdir -p data/players
+mkdir -p data/worlds
+
+ln -s ../../data/players Cuberite/players
 
 # The Ranks.sqlite is only create on server start. to be able to update
 # permissions a dump is loaded here
