@@ -10,7 +10,8 @@ mkdir -p data
 mkdir -p data/players
 mkdir -p data/worlds
 
-ln -s ../../data/players Cuberite/players
+rm -rf Cuberite/players
+ln -s ../data/players Cuberite/players
 
 # The Ranks.sqlite is only create on server start. to be able to update
 # permissions a dump is loaded here
