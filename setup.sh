@@ -14,4 +14,4 @@ ln -s ../data/players Cuberite/players
 
 # The Ranks.sqlite is only create on server start. to be able to update
 # permissions a dump is loaded here
-cat Ranks.sql | sqlite3 Cuberite/Ranks.sqlite
+cat server-egg/Ranks.sql | sqlite3 Cuberite/Ranks.sqlite
