@@ -9,9 +9,11 @@ rm Cuberite.tar.gz
 mkdir -p data
 mkdir -p data/players
 mkdir -p data/worlds
+mkdir -p data/PluginData
 
 ln -s ../data/players Cuberite/players
+ln -s ../data/PluginData Cuberite/PluginData
 
-# The Ranks.sqlite is only create on server start. to be able to update
+# The Ranks.sqlite is only created on server start. to be able to update
 # permissions a dump is loaded here
 cat server-egg/Ranks.sql | sqlite3 Cuberite/Ranks.sqlite
