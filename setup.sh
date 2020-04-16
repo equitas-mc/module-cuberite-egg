@@ -14,7 +14,7 @@ mkdir -p data/PluginData
 ln -s ../data/players Cuberite/players
 ln -s ../data/PluginData Cuberite/PluginData
 
-ln -s ../server-egg/module-cuberite-egg/AutoSave Cuberite/Plugins/AutoSave
+ln -s ../../server-egg/module-cuberite-egg/AutoSave Cuberite/Plugins/AutoSave
 
 # The Ranks.sqlite is only created on server start. to be able to update
 # permissions a dump is loaded here
