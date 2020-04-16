@@ -1,0 +1,3 @@
+[submodule "AutoSave"]
+	path = AutoSave
+	url = https://github.com/Xenoxis/AutoSave.git
